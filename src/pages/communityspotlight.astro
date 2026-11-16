@@ -1,0 +1,255 @@
+---
+import Base from '../layouts/Base.astro';
+import { donateUrl, email, matchUrl, photos } from '../data/site';
+---
+
+<Base
+  title="Community Spotlight"
+  description="Community Spotlight stories from Community Help Network, including the $20,000 year-end match figure as written on this page."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Community Spotlight</h1>
+      <p class="mt-3 max-w-3xl text-lg">Highlights from the current Community Spotlight page, as written.</p>
+    </div>
+  </header>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-12">
+    <div class="alert alert-warning" role="note">
+      <span>
+        This page says the year-end match is $20,000. The homepage and the Events page say $24,000. Both figures are left as published. They are not reconciled.
+      </span>
+    </div>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Rise &amp; Recognize Kickoff!</h2>
+      <p>Thanks to Amazon and their generous grant! Rise &amp; Recognize Kickoff!</p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">October 2026 Happenings!</h2>
+      <p>
+        Did you know we have a monthly household pantry for those in need? The household pantry is open to residents of southern Lake County and supplies monthly staples such as toilet paper, paper towel and personal care items. Please reach out if you have questions.
+      </p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Year End Match</h2>
+      <p>
+        Our Year End Giving $20,000 Match campaign has officially launched. Thanks to anonymous donors all donations up to $20,000 will be matched through the end of the year. Please consider donating to our organization to help us offset increased costs in our programming. Thank you!
+      </p>
+      <a class="btn btn-primary" href={matchUrl} target="_blank" rel="noopener noreferrer">
+        Year End Match donation
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Buddy Bag packing is in full swing!</h2>
+      <p>Our numbers are going up! We are packing 536 Buddy Bags a week for the elementary kids. We are also delivering monthly grocery cards to 405 middle school students.</p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Crown Point Coffin Cup</h2>
+      <p>CHN was one of eleven teams who competed in the first annual Coffin Cup on the square. We didn’t win but had a great time!</p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">United Way Grant!</h2>
+      <p>
+        We are thrilled to announce our organization was awarded a 2026 Community Impact Grant from the United Way. We also had Dave Mays from the United Way NWI come and speak to our board. Thank you United Way for supporting our mission.
+      </p>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="section-title text-3xl font-semibold">Supporting our community through giving and receiving</h2>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">University of Saint Francis</h3>
+        <p>A huge thank you to University of Saint Francis Crown Point for your donation of household items for our pantry!!</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">St. Jude Stand Together Walk</h3>
+        <p>
+          Community Help Network set up a table at The Stand Together: Walk for Hope and Survivor Celebration in October. Thank you Val and Sandy for representing us at this great St. Jude event.
+        </p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Pumpkin</h3>
+        <p>Our volunteers Bob and Dian did an amazing job carving a pumpkin for Purdue Extension-Lake County and Lake County Master Gardeners.</p>
+      </article>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="section-title text-3xl font-semibold">September Happenings</h2>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Ladle of Love is back!</h3>
+        <p>
+          Join us for a free luncheon at our location, 550 East Burrell Drive, on October 3rd and 17th. Come out from 11 a.m. to 1 p.m. for food, fellowship and prizes. We are always looking for restaurants and businesses to provide food dishes for this event. If you would like to help, please contact us at
+          <a href={`mailto:${email}`}>{email}</a>.
+        </p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Buddy Bag packing is in full swing!</h3>
+        <p>Our numbers are going up! We are packing 510 Buddy Bags a week for the elementary kids. We are also delivering monthly gift cards to 299 middle school students.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Griffith Animal Control</h3>
+        <p>Through our donations from Amazon, we were able to donate a large amount of pet food to Griffith Animal Control.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Dollar Tree food donation</h3>
+        <p>Even though summer has just ended, we are already stocking up for next year’s Summer Food Program. Thank you to Dollar Tree for donating a huge amount of food to our organization.</p>
+      </article>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="section-title text-3xl font-semibold">More September thanks</h2>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Women on a Mission</h3>
+        <p>We had a huge turnout from Women on a Mission, over 25 ladies! They painted benches, packed hygiene kits and assembled candy bags. This was their second year visiting us. We appreciate all your hard work.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Horizon Bank</h3>
+        <p>A crew from Horizon Bank worked at our warehouse on Horizon Cares Day. They assembled Halloween craft kits to go in our Buddy Bags. The kids will sure love them. Thank you.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Griffith United Methodist</h3>
+        <p>Our volunteers Bob and Dian visited Griffith First United Methodist Church in September to speak about our programs. The ladies of United Women of Faith surprised them with a huge household pantry donation as well as a monetary donation. Thank you!</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Clyde &amp; Co</h3>
+        <p>A group from Clyde &amp; Co spent a Monday morning helping us pack Buddy Bags. We enjoyed giving you a tour of our programs. We thank you for your help on the line!</p>
+      </article>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">August — back to school!</h2>
+      <p>
+        It’s finally back to school. After quite the month, the kids are all back in school and they could use some extra support. Please consider donating to our Back to School Buy a Buddy Bag fundraiser. Each purchase provides meals to local students over the weekend. Purchase one month, two months, three months, or an entire year of Buddy Bags.
+      </p>
+      <p>If you are a business and would like to sponsor the Buy a Buddy Bag fundraiser, donate through the link below. The organization will acknowledge the donation with social media promotion.</p>
+      <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+        Buy a Buddy Bag
+        <span class="sr-only">on Zeffy, opens in a new tab. No price is shown here.</span>
+      </a>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Emergency relief</h2>
+      <p>We responded to the storms with a two-day Pick 5 event at our warehouse. Food, household items and school supplies were given out to our community. We were able to provide for 117 families.</p>
+      <p>Community Help Network teamed up with the City of Crown Point and distributed household supplies at their emergency relief event August 17th at Bulldog Park. We handed out 250 bags of household and cleaning supplies.</p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Maple Grove Landscaping</h2>
+      <p>A huge thank you to Maple Grove Landscaping for revamping our flag pole area. It was overgrown and looking sad. What a transformation!</p>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <figure>
+          <img src={photos.flagpoleBefore.src} alt={photos.flagpoleBefore.alt} width="801" height="1024" class="w-full rounded-box" loading="lazy" />
+          <figcaption class="mt-2 text-sm">Before</figcaption>
+        </figure>
+        <figure>
+          <img src={photos.flagpoleAfter.src} alt={photos.flagpoleAfter.alt} width="1200" height="1146" class="w-full rounded-box" loading="lazy" />
+          <figcaption class="mt-2 text-sm">After</figcaption>
+        </figure>
+      </div>
+      <p>Please reach out to Maple Grove Landscaping for any personal landscaping needs. The work speaks for itself.</p>
+    </section>
+
+    <section class="grid items-start gap-6 lg:grid-cols-2">
+      <div class="space-y-3">
+        <h2 class="section-title text-3xl font-semibold">First Buddy Bag picking day</h2>
+        <p>We kicked off the 2026/2027 school year August 31st! Thank you to all our Buddy Bag packers, stockers, and delivery drivers. We are on our way to a great year!</p>
+      </div>
+      <img src={photos.pickingDay.src} alt={photos.pickingDay.alt} width="771" height="1024" class="w-full rounded-box" loading="lazy" />
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Amazon Service Day</h2>
+      <p>Amazon Merrillville/Hobart sent a wonderful group of volunteers to our warehouse this month. They packed first aid kits that will be sent out in Buddy Bags. Thanks Amazon!</p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">July: it’s time for back-to-school prep!</h2>
+      <p>
+        Next month brings the start of the school year. We are kicking off the school year and getting ready to start packing Buddy Bags. We could really use the community’s support keeping this program funded. Please consider donating to our Back to School Buy a Buddy Bag fundraiser. Each purchase provides meals to local students over the weekend.
+      </p>
+      <p>If you are a business and would like to sponsor the Buy a Buddy Bag fundraiser, donate through the link below. The organization will acknowledge the donation with social media promotion.</p>
+      <a class="btn btn-outline" href={donateUrl} target="_blank" rel="noopener noreferrer">
+        Buy a sponsorship
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="section-title text-3xl font-semibold">Crown Point Rotary</h2>
+      <p>CHN was honored to attend Crown Point Rotary’s 90th Anniversary Celebration. We were fortunate to receive a $2000 grant to our organization. Thank you CP Rotary!</p>
+    </section>
+
+    <section class="grid items-start gap-6 lg:grid-cols-2">
+      <div class="space-y-3">
+        <h2 class="section-title text-3xl font-semibold">Westfield Briggs</h2>
+        <p>Thank you Westfield Briggs for taking a tour of our warehouse and presenting us with a $4500 check. Your team is amazing!</p>
+      </div>
+      <figure>
+        <img src={photos.westfieldCheck.src} alt={photos.westfieldCheck.alt} class="w-full rounded-box" loading="lazy" />
+        <figcaption class="mt-2 text-sm">The check in the photo reads Westfield Insurance Foundation, $4,500, Summer 2026.</figcaption>
+      </figure>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="section-title text-3xl font-semibold">Summer thanks</h2>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Bingo</h3>
+        <p>CHN worked the bingo tent at Cedar Lake Summerfest! Thank you to everyone who volunteered.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Suncrest Christian Church</h3>
+        <p>Suncrest Christian Church volunteered this month in our Summer Food Program. They shopped families, decorated bags, and sorted treat bags. Thank you for all your help!</p>
+      </article>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="section-title text-3xl font-semibold">June spotlight</h2>
+      <article class="grid items-start gap-6 lg:grid-cols-2">
+        <div class="space-y-2">
+          <h3 class="text-xl font-semibold">Bethel Church</h3>
+          <p>
+            We are absolutely blown away by the support of Bethel Church’s VBS Mission Project. During VBS at three church locations, they were able to raise over $11,000 for our Buddy Bag program. Our board members were shocked to receive such a generous donation. Thank you Bethel Church for ensuring our local school kids will be well fed this school year.
+          </p>
+        </div>
+        <img src={photos.bethelVbs.src} alt={photos.bethelVbs.alt} class="w-full rounded-box" loading="lazy" />
+      </article>
+      <article class="grid items-start gap-6 lg:grid-cols-2">
+        <div class="space-y-2">
+          <h3 class="text-xl font-semibold">Scott’s U-Save Tire</h3>
+          <p>
+            Did you know CHN gives out over 50 packs of diapers every month? Scott’s U Save Tires hosted a diaper drive and we were the lucky recipients of their collection. These diapers are very much appreciated. Thank you Scott’s for being a continuous supporter of our organization!
+          </p>
+        </div>
+        <img src={photos.scottsDiapers.src} alt={photos.scottsDiapers.alt} class="w-full rounded-box" loading="lazy" />
+      </article>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Supporting our community through giving and receiving</h2>
+      <article class="space-y-3">
+        <h3 class="text-xl font-semibold">Off Square Brewing</h3>
+        <img src={photos.bbqVolunteers.src} alt={photos.bbqVolunteers.alt} width="1200" height="925" class="w-full max-w-xl rounded-box" loading="lazy" />
+        <p>The current page shows this photo with the Off Square Brewing heading. A written description was not on the page, so none is added here.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Crown Point Garden Club Youth Initiative</h3>
+        <p>Named on the current page. A written description was not in the page text, so none is added here.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Dollar Tree</h3>
+        <p>Named on the current page beside the summer stocking note above. No further description was in the page text.</p>
+      </article>
+      <article class="space-y-2">
+        <h3 class="text-xl font-semibold">Food Bank Delivery Team</h3>
+        <p>Named on the current page. A written description was not in the page text, so none is added here.</p>
+      </article>
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import { amazonWishlistUrl, donateUrl, photos } from '../data/site';
+import { pantryItems } from '../data/lists';
+---
+
+<Base
+  title="Household Pantry"
+  description="Cleaning supplies, paper products, and hygiene items for low-income families in South Lake County. Open Tuesday and Saturday mornings."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Household Pantry</h1>
+      <p class="mt-3 max-w-3xl text-lg">Don’t go without the necessities.</p>
+    </div>
+  </header>
+
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 lg:grid-cols-2">
+    <div class="space-y-4">
+      <p>Our household pantry serves low-income families in South Lake County, Indiana.</p>
+      <p>These are cleaning supplies, paper products, and hygiene items that cannot be purchased with SNAP benefits.</p>
+      <h2 class="section-title text-2xl font-semibold">Hours</h2>
+      <ul class="list-disc pl-5">
+        <li>Tuesday, 9:00 a.m.–12:00 p.m.</li>
+        <li>Saturday, 9:00 a.m.–12:00 p.m.</li>
+      </ul>
+      <h2 class="section-title text-2xl font-semibold">Bring</h2>
+      <ul class="list-disc pl-5">
+        <li>Photo ID</li>
+        <li>Proof of residency</li>
+      </ul>
+      <div class="flex flex-wrap gap-3">
+        <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+          Donate
+          <span class="sr-only">on Zeffy, opens in a new tab</span>
+        </a>
+        <a class="btn btn-outline" href={amazonWishlistUrl} target="_blank" rel="noopener noreferrer">
+          Amazon wishlist
+          <span class="sr-only">opens in a new tab</span>
+        </a>
+      </div>
+      <p class="text-sm">The Amazon wishlist asks donors to include a name so the organization can send a thank-you. It is an external link. This site does not take payment.</p>
+    </div>
+    <img src={photos.pantryShelves.src} alt={photos.pantryShelves.alt} width="1536" height="1024" class="w-full rounded-box" loading="lazy" />
+  </div>
+
+  <section class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="section-title text-3xl font-semibold">Items needed</h2>
+      <p class="mt-3">These pantry items are needed. They are not for sale.</p>
+      <ul class="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {pantryItems.map((item) => (
+          <li class="rounded-box bg-base-100 px-4 py-3">{item.label}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>

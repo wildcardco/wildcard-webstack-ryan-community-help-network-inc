@@ -1,0 +1,226 @@
+---
+import Base from '../layouts/Base.astro';
+import DonationChecklist from '../components/DonationChecklist.vue';
+import {
+  addressFull,
+  donateUrl,
+  locationNote,
+  matchUrl,
+  photos,
+  rating,
+  reviewCount,
+} from '../data/site';
+---
+
+<Base
+  title="Community Help Network"
+  description="Programming to help alleviate food insecurity and poverty in South Lake County, Indiana. Home of Buddy Bags."
+>
+  <section class="bg-base-200">
+    <div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 lg:grid-cols-2">
+      <div>
+        <h1 class="site-title text-4xl sm:text-5xl">Community Help Network</h1>
+        <p class="font-script text-secondary mt-2 text-4xl">Home of Buddy Bags</p>
+        <p class="mt-4 text-lg">
+          Our mission is to provide programming to help alleviate food insecurity and poverty in South Lake County, Indiana.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+            Donate
+            <span class="sr-only">on Zeffy, opens in a new tab</span>
+          </a>
+          <a class="btn btn-secondary" href="/how-to-help/">Volunteer</a>
+        </div>
+      </div>
+      <img
+        src={photos.packingLine.src}
+        alt={photos.packingLine.alt}
+        width="1024"
+        height="683"
+        class="w-full rounded-box"
+        fetchpriority="high"
+      />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="section-title text-3xl font-semibold">Programs</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <article class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">Buddy Bags</h3>
+          <p>
+            Weekend supplemental food for students on the free-lunch program: two breakfasts, two lunches, two dinners, snacks, and drinks. Students are anonymous to the organization.
+          </p>
+          <p>
+            Summer Buddy Bags continues with weekly grocery pickup for eight weeks at 550 East Burrell Drive or Lowell First United Methodist Church, 520 East Commercial Avenue.
+          </p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="/buddy-bags1/">Buddy Bags</a>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">Household Pantry</h3>
+          <p>Cleaning supplies, paper products, and hygiene items for low-income families in South Lake County. SNAP cannot buy these items.</p>
+          <p>Open Tuesday and Saturday, 9:00 a.m.–12:00 p.m. Photo ID and proof of residency are required.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="/household-pantry/">Household Pantry</a>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">Ladle of Love</h3>
+          <p>
+            A free community luncheon in the dining hall at 550 East Burrell Drive on the first and third Saturdays, 11:00 a.m.–1:00 p.m. Started March 2022. No charge. Free-will offerings are accepted but not expected.
+          </p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="/ladle-of-love/">Ladle of Love</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="section-title text-3xl font-semibold">Who this reaches</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <article class="card bg-base-100">
+          <div class="card-body">
+            <h3 class="card-title">Buddy Bags</h3>
+            <p>
+              Community Help Network’s Buddy Bags Program serves food insecure students with supplemental nutrition. Each Buddy Bag contains breakfast, lunch, dinner and snacks for two days. Currently we serve over 850 food insecure students throughout the four school districts of southern Lake County, Indiana.
+            </p>
+          </div>
+        </article>
+        <article class="card bg-base-100">
+          <div class="card-body">
+            <h3 class="card-title">Household Pantry</h3>
+            <p>
+              Our Household Pantry program provides cleaning supplies, paper products and hygiene items to low-income families in our service area. These are things that cannot be purchased with SNAP benefits, aka “food stamps”. In just a few short years this program has grown into serving over 110 families every month.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="section-title text-3xl font-semibold">Year End Match</h2>
+    <div class="mt-6 max-w-3xl space-y-4">
+      <p>We are thrilled to share some exciting news! Thanks to the incredible generosity of anonymous donors, we have received a $24,000 MATCH for Giving Tuesday/Year End Giving Campaign!</p>
+      <p>That means your gift can go TWICE as far! Every dollar you give will help unlock additional support, making an even greater impact on the mission we all care so deeply about.</p>
+      <p>Our goal is to make the most of this amazing opportunity, and we need YOU to help us get there!</p>
+      <ul class="list-disc pl-5">
+        <li>Your $25 becomes $50.</li>
+        <li>Your $50 becomes $100.</li>
+        <li>Your $100 becomes $200.</li>
+      </ul>
+      <p>Together, we can turn $24,000 into $48,000 in support!</p>
+      <p>Mark your calendar, spread the word, and get ready to make a difference this Giving Tuesday!</p>
+      <p>A heartfelt THANK YOU to our anonymous donors for making this generous match possible and to everyone who continues to support our mission. We couldn’t do it without you!</p>
+      <p>Let’s make this Giving Tuesday our biggest impact yet!</p>
+      <a class="btn btn-primary" href={matchUrl} target="_blank" rel="noopener noreferrer">
+        Donate for the Year End Match
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="suggested-food" class="bg-base-200">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-2">
+      <div>
+        <h2 class="section-title text-3xl font-semibold">Suggested food donations</h2>
+        <p class="mt-4">
+          Tick what you can shop for. The list stays on this screen, and you can print it. Nothing is sent or saved.
+        </p>
+        <ul class="mt-4 list-disc space-y-1 pl-5">
+          <li>Pantry staples: pasta, rice, beans, pasta sauce, peanut butter, jelly, flour, sugar, spices.</li>
+          <li>Breakfast/baking: cold cereal, cake mixes, muffin mixes, pancake mix, syrup.</li>
+          <li>Meal helpers: Hamburger Helper, side dishes, soup mixes.</li>
+          <li>Snacks: crackers, cookies, microwave popcorn, granola bars.</li>
+          <li>Canned goods: fruit, vegetables, beef, chicken, ham.</li>
+          <li>Condiments: ketchup, mustard, mayo.</li>
+        </ul>
+        <p class="mt-4">If shopping is difficult, Aldi or Strack’s gift cards are also greatly appreciated.</p>
+        <img
+          src={photos.donatedGroceries.src}
+          alt={photos.donatedGroceries.alt}
+          width="1024"
+          height="672"
+          class="mt-6 w-full rounded-box"
+          loading="lazy"
+        />
+      </div>
+      <DonationChecklist client:visible />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="section-title text-3xl font-semibold">Drop-off and visits</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <article class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">Food donations</h3>
+          <p>
+            {addressFull}. {locationNote}
+          </p>
+          <p>
+            Food-donation drop-off is stated for May, June, and July: Monday, Tuesday, Thursday, Friday, and Saturday, 9:00 a.m.–noon. Use the red door by the east-side loading dock, or the after-hours drop box. Hours for other months are not listed.
+          </p>
+        </div>
+      </article>
+      <article class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">Pantry visitors</h3>
+          <p>Tuesday and Saturday, 9:00 a.m.–12:00 p.m.</p>
+          <p>Bring photo ID and proof of residency.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="/household-pantry/">Household Pantry</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="section-title text-3xl font-semibold">Volunteer shifts</h2>
+      <ul class="mt-6 grid gap-4 md:grid-cols-3">
+        <li class="card bg-base-100">
+          <div class="card-body">
+            <h3 class="card-title">Household Pantry</h3>
+            <p>Tuesday and Saturday, 9:00 a.m.–12:00 p.m.</p>
+          </div>
+        </li>
+        <li class="card bg-base-100">
+          <div class="card-body">
+            <h3 class="card-title">Buddy Bag packing</h3>
+            <p>Monday, 10:00 a.m.–noon, during the school year.</p>
+          </div>
+        </li>
+        <li class="card bg-base-100">
+          <div class="card-body">
+            <h3 class="card-title">Ladle of Love</h3>
+            <p>First and third Saturdays, 10:00 a.m.–1:00 p.m.</p>
+          </div>
+        </li>
+      </ul>
+      <a class="btn btn-secondary mt-6" href="/how-to-help/">How to help</a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="section-title text-3xl font-semibold">Google rating</h2>
+    <div class="stats mt-6 bg-base-200">
+      <div class="stat">
+        <div class="stat-title">Google reviews</div>
+        <div class="stat-value text-primary">{rating}</div>
+        <div class="stat-desc">Aggregate rating from {reviewCount} reviews. No review quotes are shown.</div>
+      </div>
+    </div>
+  </section>
+</Base>

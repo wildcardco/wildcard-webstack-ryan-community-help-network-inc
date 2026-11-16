@@ -1,0 +1,96 @@
+---
+import { aboutLinks, donateUrl, photos, programLinks, siteName } from '../data/site';
+
+const current = Astro.url.pathname;
+const isCurrent = (href: string) => current === href;
+---
+
+<header class="site-nav sticky top-0 z-50 bg-neutral text-neutral-content">
+  <div class="navbar mx-auto max-w-6xl px-2">
+    <div class="navbar-start">
+      <div class="dropdown lg:hidden">
+        <button type="button" tabindex="0" class="btn btn-ghost btn-square" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <ul tabindex="0" class="menu dropdown-content z-50 mt-3 w-64 rounded-box bg-neutral p-2 shadow">
+          <li><a href="/" aria-current={isCurrent('/') ? 'page' : undefined}>Home</a></li>
+          <li>
+            <details>
+              <summary>Programs</summary>
+              <ul class="bg-neutral">
+                <li><a href="/programs/" aria-current={isCurrent('/programs/') ? 'page' : undefined}>All programs</a></li>
+                {programLinks.map((link) => (
+                  <li>
+                    <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
+          <li><a href="/events/" aria-current={isCurrent('/events/') ? 'page' : undefined}>Events</a></li>
+          <li><a href="/donations/" aria-current={isCurrent('/donations/') ? 'page' : undefined}>Century Club</a></li>
+          <li><a href="/how-to-help/" aria-current={isCurrent('/how-to-help/') ? 'page' : undefined}>How to Help</a></li>
+          <li>
+            <details>
+              <summary>About</summary>
+              <ul class="bg-neutral">
+                {aboutLinks.map((link) => (
+                  <li>
+                    <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+      <a href="/" class="flex min-w-0 items-center gap-2 px-1">
+        <img src={photos.logo.src} alt="" width="48" height="48" class="h-11 w-11 shrink-0 object-contain" />
+        <span class="site-title text-sm leading-tight whitespace-nowrap sm:text-xl">{siteName}</span>
+      </a>
+    </div>
+
+    <nav class="navbar-center hidden lg:flex" aria-label="Primary">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/" aria-current={isCurrent('/') ? 'page' : undefined}>Home</a></li>
+        <li>
+          <details>
+            <summary>Programs</summary>
+            <ul class="z-50 w-52 rounded-box bg-neutral p-2">
+              <li><a href="/programs/" aria-current={isCurrent('/programs/') ? 'page' : undefined}>All programs</a></li>
+              {programLinks.map((link) => (
+                <li>
+                  <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </li>
+        <li><a href="/events/" aria-current={isCurrent('/events/') ? 'page' : undefined}>Events</a></li>
+        <li><a href="/donations/" aria-current={isCurrent('/donations/') ? 'page' : undefined}>Century Club</a></li>
+        <li><a href="/how-to-help/" aria-current={isCurrent('/how-to-help/') ? 'page' : undefined}>How to Help</a></li>
+        <li>
+          <details>
+            <summary>About</summary>
+            <ul class="z-50 w-56 rounded-box bg-neutral p-2">
+              {aboutLinks.map((link) => (
+                <li>
+                  <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-end">
+      <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+        Donate
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+    </div>
+  </div>
+</header>

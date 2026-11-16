@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { donateUrl } from '../data/site';
+
+const levels = [
+  {
+    name: 'Red Apple Club',
+    range: '$100.00 to $499.00 per year',
+  },
+  {
+    name: 'Silver Apple Club',
+    range: '$500.00 to $999 per year',
+  },
+  {
+    name: 'Gold Apple Club',
+    range: '$1,000.00 and above per year',
+  },
+];
+---
+
+<Base
+  title="Century Club"
+  description="Informational annual giving levels for the Community Help Network Century Club. No checkout on this site."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Century Club</h1>
+      <p class="mt-3 max-w-3xl text-lg">
+        Annual giving levels. This page is informational. There is no checkout and no product for sale.
+      </p>
+    </div>
+  </header>
+
+  <div class="mx-auto max-w-6xl space-y-8 px-4 py-12">
+    <div class="max-w-3xl space-y-4">
+      <p>Join us in making a difference in the lives of hungry children. Your donation helps provide food to kids in South Lake County.</p>
+      <p>Buddy Bags is now packing 800+ bags of food.</p>
+      <p>
+        We are dedicated to helping children who fall into the food insecure category in the South Lake County area. Children who participate in the Buddy Bags program are on the Free Lunch program at their school.
+      </p>
+      <p>We are inviting you to become a member of our Community Help Network / Buddy Bags Century Club.</p>
+      <p>Please consider contributing to one of the following options, and please consider making your gift an annual contribution.</p>
+    </div>
+
+    <ul class="grid gap-6 md:grid-cols-3">
+      {levels.map((level) => (
+        <li class="card bg-base-200">
+          <div class="card-body">
+            <h2 class="card-title">{level.name}</h2>
+            <p>{level.range}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    <p>
+      An apple plaque bearing your name will hang on the wall at the warehouse, 550 E Burrell Dr, Crown Point.
+    </p>
+    <p>
+      Gifts are made on the external Zeffy page. This site does not take payment, and these levels are not items for sale.
+    </p>
+    <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+      Donate on Zeffy
+      <span class="sr-only">opens in a new tab</span>
+    </a>
+  </div>
+</Base>

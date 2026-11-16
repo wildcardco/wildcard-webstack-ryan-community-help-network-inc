@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: chn --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "chn";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #eeeeee;
+  --color-base-300: #e0e0e0;
+  --color-base-content: #000000;
+  --color-primary: #f90404;
+  --color-primary-content: #ffffff;
+  --color-secondary: #76be43;
+  --color-secondary-content: #ffffff;
+  --color-accent: #02d3c9;
+  --color-accent-content: #2b2b2b;
+  --color-neutral: #2b2b2b;
+  --color-neutral-content: #ffffff;
+  --color-info: #02d3c9;
+  --color-info-content: #2b2b2b;
+  --color-success: #76be43;
+  --color-success-content: #ffffff;
+  --color-warning: #c35c05;
+  --color-warning-content: #ffffff;
+  --color-error: #f90404;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-script {
+  font-family: "Rochester", cursive;
+}
+
+.site-title {
+  color: #f90404;
+  font-weight: 600;
+}
+
+.section-title {
+  color: #c35c05;
+}
+
+.site-nav .menu :where(li > a):hover,
+.site-nav .menu :where(li > summary):hover {
+  color: #ababab;
+}
+
+.site-nav .menu :where(li > a)[aria-current="page"] {
+  color: #d42333;
+  font-weight: 600;
+}
+
+.site-footer {
+  background: linear-gradient(#4e4e4e, #343434);
+  border-top: 4px solid #02d3c9;
+  color: #ffffff;
+}
+
+.site-footer a:hover {
+  color: #76be43;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}

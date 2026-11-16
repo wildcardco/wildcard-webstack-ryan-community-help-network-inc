@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+import { addressFull, locationNote, matchUrl } from '../data/site';
+---
+
+<Base
+  title="Events"
+  description="Year End Match and Summer Buddy Bags at Community Help Network in Crown Point."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Events</h1>
+      <p class="mt-3 max-w-3xl text-lg">Year End Match and Summer Buddy Bags, as written on the events page.</p>
+    </div>
+  </header>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-12">
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Year End Match</h2>
+      <p>We are thrilled to share some exciting news! Thanks to the incredible generosity of anonymous donors, we have received a $24,000 MATCH for Giving Tuesday/Year End Giving Campaign!</p>
+      <p>That means your gift can go TWICE as far! Every dollar you give will help unlock additional support, making an even greater impact on the mission we all care so deeply about.</p>
+      <p>Our goal is to make the most of this amazing opportunity, and we need YOU to help us get there!</p>
+      <ul class="list-disc pl-5">
+        <li>Your $25 becomes $50.</li>
+        <li>Your $50 becomes $100.</li>
+        <li>Your $100 becomes $200.</li>
+      </ul>
+      <p>Together, we can turn $24,000 into $48,000 in support!</p>
+      <p>Mark your calendar, spread the word, and get ready to make a difference this Giving Tuesday!</p>
+      <p>A heartfelt THANK YOU to our anonymous donors for making this generous match possible and to everyone who continues to support our mission. We couldn’t do it without you!</p>
+      <p>Let’s make this Giving Tuesday our biggest impact yet!</p>
+      <a class="btn btn-primary" href={matchUrl} target="_blank" rel="noopener noreferrer">
+        Year End Match donation
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Summer Buddy Bags</h2>
+      <p>
+        The Buddy Bags Program continues through the summer! Families can pick up groceries weekly for eight weeks at 550 East Burrell Drive, and we’ve added a new satellite location at Lowell First United Methodist Church, 520 East Commercial Avenue.
+      </p>
+      <p>
+        We’re collecting food donations for the program in May, June, and July. Drop off items at {addressFull} (across from Crown Point High School) Monday, Tuesday, Thursday, Friday, and Saturdays from 9:00 a.m.–noon. {locationNote} You can also use the drop box after hours. Hours for other months are not listed.
+      </p>
+      <a class="btn btn-outline" href="/#suggested-food">Suggested food items</a>
+    </section>
+  </div>
+</Base>

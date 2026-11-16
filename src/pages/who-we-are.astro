@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import { photos } from '../data/site';
+---
+
+<Base
+  title="Who We Are"
+  description="How Community Help Network grew from a 2017 church mission into the warehouse programs in Crown Point."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Who We Are</h1>
+      <p class="mt-3 max-w-3xl text-lg">
+        Community Help Network serves students in 23 schools by providing meals and snacks, while also running a household pantry program for low-income families in South Lake County that offers hygiene items and cleaning supplies.
+      </p>
+    </div>
+  </header>
+
+  <div class="mx-auto grid max-w-6xl items-start gap-8 px-4 py-12 lg:grid-cols-2">
+    <div class="space-y-4">
+      <p>
+        In September of 2017 the Missions Committee and the Crown Point First United Methodist Church took on the challenge of addressing food insecurity in area students. Students who qualify for the free-lunch program were getting meals at school during the week, but the concern was whether these same students had enough to eat over the weekends and longer breaks.
+      </p>
+      <p>
+        The Committee used the model from Kokomo Urban Outreach called Buddy Bags. The program provided meals and snacks for the days students were not in school. They began with one Crown Point school that fall, which turned into three schools before the end of the school year. The growth continued rapidly, and by the beginning of the 2019–2020 school year it was clear that Buddy Bags had outgrown the space and funding the church could provide.
+      </p>
+      <p>
+        In April of 2020 a group of dedicated volunteers formed the Community Help Network to encompass the Buddy Bag program. In September of that same year, space was offered in the ARC building warehouse at 550 East Burrell Drive.
+      </p>
+      <p>
+        Here the Buddy Bag program grew throughout South Lake County. The program now serves over 850 food insecure students in twenty-three schools in four school districts.
+      </p>
+      <p>
+        Community Help Network added a Household Pantry in January of 2021. This program provides cleaning supplies, paper products, and hygiene items to low-income families in South Lake County. These are all things that cannot be purchased with food stamps. This program has grown significantly. In the first quarter of 2022 the pantry served an average of 36 families per month. The last quarter saw that number increase to 47 families. In the first month of 2023, nearly 60 families were served.
+      </p>
+      <p>
+        Founder: Bonnie J Meyer. The Buddy Bags history names Bonnie Meyer, then Director of Missions and Outreach at Crown Point First United Methodist Church, as the person who brought the Kokomo Buddy Bags model to the community.
+      </p>
+      <div class="alert alert-warning" role="note">
+        <span>
+          The counts on this page are shown as published here. They are not combined with the counts on the homepage, the Buddy Bags page, or Community Spotlight.
+        </span>
+      </div>
+    </div>
+    <img src={photos.warehouseCrew.src} alt={photos.warehouseCrew.alt} width="1536" height="1024" class="w-full rounded-box" loading="lazy" />
+  </div>
+
+  <section class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="section-title text-3xl font-semibold">Figures published on this page</h2>
+      <div class="stats mt-6 stats-vertical bg-base-100 shadow sm:stats-horizontal">
+        <div class="stat">
+          <div class="stat-title">Middle schools</div>
+          <div class="stat-value text-2xl">4</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Elementary</div>
+          <div class="stat-value text-2xl">16</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Preschools</div>
+          <div class="stat-value text-2xl">2</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Total schools</div>
+          <div class="stat-value text-2xl">22</div>
+        </div>
+      </div>
+      <ul class="mt-6 list-disc pl-5">
+        <li>581 preschool and elementary students</li>
+        <li>223 middle school students</li>
+      </ul>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="btn btn-primary" href="/board/">Board 2026</a>
+        <a class="btn btn-outline" href="/supporters/">Supporters</a>
+      </div>
+    </div>
+  </section>
+</Base>

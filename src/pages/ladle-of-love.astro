@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { email, photos } from '../data/site';
+---
+
+<Base
+  title="Ladle of Love"
+  description="Free community luncheon on the first and third Saturdays, 11:00 a.m. to 1:00 p.m., in the dining hall at 550 East Burrell Drive."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">Ladle of Love</h1>
+      <p class="mt-3 max-w-3xl text-lg">All are welcome. No charge.</p>
+    </div>
+  </header>
+
+  <div class="mx-auto grid max-w-6xl items-start gap-8 px-4 py-12 lg:grid-cols-2">
+    <div class="space-y-4">
+      <p>
+        Join us the first and third Saturdays of each month for Ladle of Love. The luncheon is in the dining hall at 550 East Burrell Drive, from 11:00 a.m. until 1:00 p.m. It started in March 2022.
+      </p>
+      <p>There is no charge. Free-will offerings are accepted but not expected.</p>
+      <p>
+        Chef Honey from Tavern on Main creates a special entree. Breads and sweets come in from Great Harvest Bread Company. Kristi Erladi from Full Plate Catering pops in from time to time with salads and baked goods.
+      </p>
+      <p>
+        If you are a local business and would like to donate the meal, email <a class="link" href={`mailto:${email}`}>{email}</a>.
+      </p>
+      <p>
+        Volunteer help for the luncheon is the first and third Saturdays, 10:00 a.m.–1:00 p.m. <a class="link" href="/how-to-help/">See how to help</a>.
+      </p>
+    </div>
+    <img src={photos.luncheon.src} alt={photos.luncheon.alt} width="910" height="638" class="w-full rounded-box" />
+  </div>
+</Base>

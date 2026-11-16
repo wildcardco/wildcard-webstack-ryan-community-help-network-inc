@@ -1,0 +1,92 @@
+---
+import Base from '../layouts/Base.astro';
+import DonationChecklist from '../components/DonationChecklist.vue';
+import {
+  addressFull,
+  amazonWishlistUrl,
+  donateUrl,
+  email,
+  locationNote,
+  photos,
+  pointSignupUrl,
+} from '../data/site';
+---
+
+<Base
+  title="How to Help"
+  description="Volunteer shifts, food donations, and external links to sign up on Point or donate on Zeffy."
+>
+  <header class="bg-base-200">
+    <div class="mx-auto max-w-6xl px-4 py-10">
+      <h1 class="text-4xl font-semibold text-primary">How to Help</h1>
+      <p class="mt-3 max-w-3xl text-lg">
+        Whether it’s through volunteering, giving, or advocating, you can help throughout South Lake County, Indiana.
+      </p>
+    </div>
+  </header>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-12">
+    <section class="grid items-start gap-8 lg:grid-cols-2">
+      <div class="space-y-4">
+        <h2 class="section-title text-3xl font-semibold">Volunteer shifts</h2>
+        <p>Volunteering is a way to help the community. Sign-up stays on Point, outside this site.</p>
+        <ul class="space-y-4">
+          <li class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Household Pantry</h3>
+              <p>Tuesday and Saturday, from 9:00 a.m. until 12:00 p.m.</p>
+            </div>
+          </li>
+          <li class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Buddy Bags</h3>
+              <p>Packing Buddy Bags on Monday mornings, 10:00 a.m. until noon, during the school year.</p>
+            </div>
+          </li>
+          <li class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Ladle of Love</h3>
+              <p>First and third Saturdays of the month, from 10:00 a.m. until 1:00 p.m.</p>
+              <p>
+                If you are a local business and would like to donate the meal, email
+                <a href={`mailto:${email}`}>{email}</a>.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a class="btn btn-secondary" href={pointSignupUrl} target="_blank" rel="noopener noreferrer">
+          Sign up to volunteer on Point
+          <span class="sr-only">opens in a new tab</span>
+        </a>
+      </div>
+      <img src={photos.volunteerTables.src} alt={photos.volunteerTables.alt} width="1024" height="683" class="w-full rounded-box" loading="lazy" />
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Give</h2>
+      <p>Every dollar donated goes straight to creating more Buddy Bags and supporting the other programs. Donations are taken on Zeffy, not on this site.</p>
+      <a class="btn btn-primary" href={donateUrl} target="_blank" rel="noopener noreferrer">
+        Donate
+        <span class="sr-only">on Zeffy, opens in a new tab</span>
+      </a>
+      <p>
+        You can also send items from the
+        <a href={amazonWishlistUrl} target="_blank" rel="noopener noreferrer">Amazon wishlist</a>.
+        Include your name so a thank-you can be sent.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-title text-3xl font-semibold">Food donations</h2>
+      <p>
+        Food donations help make more Buddy Bags. Use the checklist for the suggested food list and the Household Pantry item list. Tick items for your own shopping list and print it. Nothing is sent or stored.
+      </p>
+      <p>If shopping is difficult, Aldi or Strack’s gift cards are also greatly appreciated.</p>
+      <p>
+        Drop off at {addressFull}. {locationNote} Food-donation hours are stated for May, June, and July: Monday, Tuesday, Thursday, Friday, and Saturday, 9:00 a.m.–noon, or the after-hours drop box. Hours for other months are not listed.
+      </p>
+      <img src={photos.foodRacking.src} alt={photos.foodRacking.alt} width="1024" height="683" class="w-full rounded-box" loading="lazy" />
+      <DonationChecklist client:visible />
+    </section>
+  </div>
+</Base>
