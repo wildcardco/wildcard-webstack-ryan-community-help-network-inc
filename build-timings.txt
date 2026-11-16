@@ -1,0 +1,88 @@
+16:47:32 [types] Generated 40ms
+16:47:32 [build] output: "static"
+16:47:32 [build] mode: "static"
+16:47:32 [build] directory: /agent/repos/wildcard-webstack-ryan-community-help-network-inc/dist/
+16:47:32 [build] Collecting build info...
+16:47:32 [build] ✓ Completed in 133ms.
+16:47:32 [build] Building static entrypoints...
+/*! 🌼 daisyUI 5.8.1 */
+16:47:33 [vite] ✓ built in 335ms
+16:47:33 [vite] ✓ built in 101ms
+16:47:33 [build] Rearranging server assets...
+
+ generating static routes 
+16:47:33   ├─ /board/index.html (+9ms) 
+16:47:33   ├─ /buddy-bags1/index.html (+8ms) 
+16:47:33   ├─ /communityspotlight/index.html (+3ms) 
+16:47:33   ├─ /donations/index.html (+2ms) 
+16:47:33   ├─ /events/index.html (+2ms) 
+16:47:33   ├─ /household-pantry/index.html (+2ms) 
+16:47:33   ├─ /how-to-help/index.html (+3ms) 
+16:47:33   ├─ /ladle-of-love/index.html (+2ms) 
+16:47:33   ├─ /programs/index.html (+2ms) 
+16:47:33   ├─ /supporters/index.html (+2ms) 
+16:47:33   ├─ /who-we-are/index.html (+1ms) 
+16:47:33   ├─ /index.html (+3ms) 
+16:47:33 ✓ Completed in 51ms.
+
+16:47:33 [build] ✓ Completed in 530ms.
+16:47:33 [build] 12 page(s) built in 666ms
+16:47:33 [build] Complete!
+
+ build timings 
+total 763ms · 12 pages · output "static"
+
+Build phases
+  resolve config                        88ms  11.5% ██▅···················
+  setup                                133ms  17.4% ··▂███▅···············
+    route discovery                      5ms   0.7% ····▂·················
+    vite config                         21ms   2.8% ····▂▄················
+    content sync                        40ms   5.2% ·····▅▅···············
+  prerender bundle                     336ms  44.1% ·······▆█████████▁····
+  client bundle                        101ms  13.3% ·················███··
+  manifest injection                     6ms   0.8% ····················▂·
+  generate pages                        52ms   6.8% ····················▅█
+    prerenderer setup                   11ms   1.4% ····················▃·
+
+Vite plugins (223ms of the build)
+  @tailwindcss/vite:generate:build     113ms        ···········▇██▄·······  1 call · transform 113ms
+  vite:vue                              42ms        ··········▇······▃····  12 calls · transform 42ms
+  vite:css                              20ms        ··············▅·······  6 calls · transform 20ms
+  astro:build                           10ms        ·········▂▁▁··········  17 calls · transform 10ms
+  vite:css-post                          7ms        ···············▂▁·····  30 calls · renderChunk 6ms
+  astro:session-provider                 4ms        ········▁▁············  677 calls · resolveId 4ms
+  astro:routes                           4ms        ········▁▁············  230 calls · transform 4ms
+  astro:markdown                         4ms        ········▁▁············  665 calls · resolveId 4ms
+
+Slowest files to bundle (194ms in load/transform)
+  src/styles/global.css                133ms        ···········▇███·······  @tailwindcss/vite:generate:build 113ms · vite:css 20ms
+  src/components/SchoolFinder.vue       25ms        ··········▆······▁····  vite:vue 25ms
+  …/components/DonationChecklist.vue    17ms        ··········▂······▃····  vite:vue 17ms
+  src/pages/buddy-bags1.astro            4ms        ·········▁············  astro:build 4ms
+  src/pages/communityspotlight.astro     2ms        ·········▁············  astro:build 2ms
+  …ro/dist/actions/runtime/client.js     1ms        ········▁·············  astro:vite-plugin-env 1ms
+  …ro/dist/actions/runtime/server.js     1ms        ·········▁············  astro:vite-plugin-env 1ms
+  src/pages/index.astro                  1ms        ··········▁···········  astro:build 1ms
+
+Astro compiler (15 components, 9ms)
+  src/pages/buddy-bags1.astro            3ms
+  src/pages/communityspotlight.astro     2ms
+  src/pages/index.astro                  1ms
+
+Page rendering (40ms across 12 pages)
+  component render                      29ms   3.9% ····················▂▆
+  page pipeline                         10ms   1.3%
+
+Slowest pages (median 2ms · p95 9ms)
+  /board                                 9ms
+  /buddy-bags1                           8ms
+  /how-to-help                           3ms
+  /communityspotlight                    3ms
+  /                                      3ms
+  /ladle-of-love                         2ms
+  /programs                              2ms
+  /events                                2ms
+
+Integrations (61ms in hooks)
+  @astrojs/vue                          61ms   8.0% ··▁█▆·················  astro:config:setup 61ms
+
