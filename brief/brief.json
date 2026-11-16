@@ -1,0 +1,268 @@
+{
+  "brief_status": "complete",
+  "gaps": [
+    "Legal name: the live header and page titles say Community Help Network, while the business record says Community Help Network, Inc. Use Community Help Network in the header until the owner confirms.",
+    "EIN, 501(c) status, licenses, and awards are not stated on any page read. Omit them.",
+    "Buy a Buddy Bag amounts and stock are not on the domain, and the Zeffy checkout was not opened. Show no prices.",
+    "Participation counts conflict. The homepage says over 850 students and over 110 pantry families a month. Who We Are says 23 schools and older pantry counts near 60. The Buddy Bags page says over 800 students in 22 schools. Century Club says 800+ bags. Show each figure only on its source page and do not merge them.",
+    "School lists conflict. The Century Club list omits Lake Street and Homan and spells Peifer. The Buddy Bags page spells Piefer. Use the Buddy Bags page list as written and flag it for owner review.",
+    "Year-end match conflicts. The homepage and Events page say $24,000. Community Spotlight says $20,000. Do not reconcile.",
+    "Executive director conflicts. Board 2026 lists Eden Koenig, and the Ladle of Love page names Val Stahl. Use Board 2026 on /board/ only and name no director elsewhere until confirmed.",
+    "Exact logo hex values (red apple, green leaf) were not sampled from the image files.",
+    "Supporter names on /supporters/ were not extracted.",
+    "Individual Google review text was not opened. Show only the aggregate 4.7 from 12 reviews, with no quotes.",
+    "Food-donation drop-off hours were stated for May, June, and July only. Hours for other months are unknown.",
+    "Homepage photos IMG_0795 and unnamed-38 and the portrait GBP photo (HTTP 400) were not viewed.",
+    "The current state of /volunteer-signup/ (Point widget) was not inspected beyond its HTTP 200 response."
+  ],
+  "path": "upgrade",
+  "kit": "daisyui",
+  "stack": {
+    "framework": "astro",
+    "styling": "tailwind-v4",
+    "islands": "vue3",
+    "island_files": ".vue <script setup>"
+  },
+  "business": {
+    "name": "Community Help Network",
+    "town": "Crown Point",
+    "category": "Non-profit organization",
+    "services": [
+      "Buddy Bags: weekend supplemental food for students on the free-lunch program (two breakfasts, two lunches, two dinners, snacks, and drinks). Students are anonymous to the organization.",
+      "Household Pantry: cleaning supplies, paper products, and hygiene items for low-income families in South Lake County, which SNAP cannot buy. Photo ID and proof of residency are required. Open Tuesday and Saturday 9:00 a.m.–12:00 p.m.",
+      "Ladle of Love: free community luncheon in the dining hall at 550 East Burrell Drive on the first and third Saturdays, 11:00 a.m.–1:00 p.m. Started March 2022. No charge; free-will offerings accepted but not expected.",
+      "Summer Buddy Bags: weekly grocery pickup for eight weeks at 550 East Burrell Drive or Lowell First United Methodist Church, 520 East Commercial Avenue.",
+      "Century Club annual giving levels: Red Apple Club $100–$499, Silver Apple Club $500–$999, Gold Apple Club $1,000 and above, with a named apple plaque at the warehouse.",
+      "Food-donation drop-off (stated for May, June, and July): Monday, Tuesday, Thursday, Friday, and Saturday, 9:00 a.m.–noon, at the red door by the east-side loading dock, or the after-hours drop box."
+    ],
+    "phone": "(219) 805-3717",
+    "address": "550 E Burrell Dr, Crown Point, IN 46307 (ARC building warehouse, across from Crown Point High School; loading-dock entrance is the red door on the east side)",
+    "rating": 4.7,
+    "review_count": 12
+  },
+  "brand": {
+    "logo": {
+      "found": true,
+      "source_url": "https://www.communityhelpnet.org/wp-content/uploads/2023/05/Small.png",
+      "notes": "Two same-domain logos were opened. The first is a cropped red apple with a brown stem, green leaf, and white arched text 'Community Help Network / Home of BUDDY BAGS'; favicons are cropped-Small-*.png. The second, https://www.communityhelpnet.org/wp-content/uploads/2023/07/The-Community-Help-Network-1-1.png, is a full red apple on black with a green leaf and red text 'Community Help Network / HOME OF BUDDY BAGS'. The live header shows text only. The upgrade may show the logo image beside the 'Community Help Network' wordmark text. Do not redraw or recolor the logo. Apple and leaf hex values were not sampled."
+    },
+    "colors": [
+      {
+        "hex": "#2b2b2b",
+        "role": "header background / dark neutral",
+        "guessed": false
+      },
+      {
+        "hex": "#f90404",
+        "role": "primary (site-title red)",
+        "guessed": false
+      },
+      {
+        "hex": "#ff0303",
+        "role": "primary CTA (header Donate button)",
+        "guessed": false
+      },
+      {
+        "hex": "#d42333",
+        "role": "active nav accent",
+        "guessed": false
+      },
+      {
+        "hex": "#ffffff",
+        "role": "nav text / base light",
+        "guessed": false
+      },
+      {
+        "hex": "#ababab",
+        "role": "nav hover",
+        "guessed": false
+      },
+      {
+        "hex": "#76be43",
+        "role": "secondary (footer link hover green)",
+        "guessed": false
+      },
+      {
+        "hex": "#02d3c9",
+        "role": "accent (footer top border)",
+        "guessed": false
+      },
+      {
+        "hex": "#c35c05",
+        "role": "homepage heading accent",
+        "guessed": false
+      },
+      {
+        "hex": "#4e4e4e",
+        "role": "footer gradient start",
+        "guessed": false
+      },
+      {
+        "hex": "#343434",
+        "role": "footer gradient end",
+        "guessed": false
+      },
+      {
+        "hex": "#eeeeee",
+        "role": "card background",
+        "guessed": false
+      },
+      {
+        "hex": "#000000",
+        "role": "body text",
+        "guessed": false
+      }
+    ],
+    "fonts": {
+      "observed": [
+        "Roboto",
+        "Rochester"
+      ],
+      "kit_recommendation": "Use a custom daisyUI theme mapped to the observed colors: primary #f90404, accent #02d3c9, secondary #76be43, neutral #2b2b2b, base-100 #ffffff, base-200 #eeeeee. Set Roboto as the body and heading font, with 600 weight for the site title as observed. Use Rochester sparingly, for one decorative homepage heading only, as on the current site. Do not adopt the WordPress preset palette or the unconfirmed Elementor kit tokens (#6EC1E4, #54595F, #61CE70, #FFBC7D)."
+    },
+    "tone": "Plainspoken, local, and grateful. Lead with the mission and food-security language, and make direct volunteer and donation asks. Use 'Home of Buddy Bags' as the identity line."
+  },
+  "site_map": {
+    "pages": [
+      {
+        "path": "/",
+        "purpose": "Mission statement, the three named programs with hours, homepage counts as written, suggested food donations, year-end match copy as written, location and drop-off info, and Donate/Volunteer CTAs.",
+        "nav_label": "Home"
+      },
+      {
+        "path": "/programs/",
+        "purpose": "Overview hub linking to Buddy Bags, Summer Buddy Bags, Household Pantry, and Ladle of Love. Rewrite the mixed copy into clean program cards using only verified program facts.",
+        "nav_label": "Programs"
+      },
+      {
+        "path": "/buddy-bags1/",
+        "purpose": "Buddy Bags program: weekend bag contents, student anonymity, the school corporations and schools as listed on this page, middle schools receiving a $25 gift card instead of a bag, and Summer Buddy Bags pickup locations. Keep the existing slug to preserve inbound links.",
+        "nav_label": "Buddy Bags"
+      },
+      {
+        "path": "/household-pantry/",
+        "purpose": "Household Pantry: who it serves (low-income families in South Lake County), hours, the photo ID and proof of residency requirement, the note that SNAP cannot buy these items, and the list of pantry items needed.",
+        "nav_label": "Household Pantry"
+      },
+      {
+        "path": "/ladle-of-love/",
+        "purpose": "Free community luncheon on the first and third Saturdays, 11:00 a.m.–1:00 p.m., in the dining hall. Started March 2022. Free-will offerings accepted but not expected. This page is live but missing from the current menu; add it to the nav.",
+        "nav_label": "Ladle of Love"
+      },
+      {
+        "path": "/events/",
+        "purpose": "Events page, including the year-end match copy as written there ($24,000 match turning into $48,000, with $25/$50, $50/$100, and $100/$200 examples). Donate links go to external Zeffy.",
+        "nav_label": "Events"
+      },
+      {
+        "path": "/donations/",
+        "purpose": "Century Club annual giving levels (Red Apple $100–$499, Silver Apple $500–$999, Gold Apple $1,000+) with a named apple plaque at the warehouse. Informational only. No checkout and no product presentation.",
+        "nav_label": "Century Club"
+      },
+      {
+        "path": "/how-to-help/",
+        "purpose": "Volunteer shifts (pantry, Buddy Bag packing, Ladle of Love), the food-donation list and drop-off instructions, a request for Aldi or Strack's gift cards, an external Point signup link, and an external Zeffy donate link.",
+        "nav_label": "How to Help"
+      },
+      {
+        "path": "/who-we-are/",
+        "purpose": "Mission and history as stated: September 2017 start by the Missions Committee and Crown Point First United Methodist Church, modeled on Kokomo Urban Outreach Buddy Bags; Community Help Network formed April 2020; warehouse space offered September 2020; Household Pantry added January 2021; founder Bonnie J Meyer.",
+        "nav_label": "Who We Are"
+      },
+      {
+        "path": "/board/",
+        "purpose": "Board 2026 names and roles exactly as listed on the current page.",
+        "nav_label": "Board 2026"
+      },
+      {
+        "path": "/supporters/",
+        "purpose": "Supporters page. Preserve it in the IA, but supporter names were not extracted, so show a placeholder flagged for owner content and do not invent names.",
+        "nav_label": "Supporters"
+      },
+      {
+        "path": "/communityspotlight/",
+        "purpose": "Community Spotlight page, preserved from the current IA. Present its content as written. Its $20,000 match figure conflicts with other pages and is flagged, not reconciled.",
+        "nav_label": "Community Spotlight"
+      }
+    ],
+    "nav": [
+      "Home",
+      "Programs (dropdown: Buddy Bags, Household Pantry, Ladle of Love)",
+      "Events",
+      "Century Club",
+      "How to Help",
+      "About (dropdown: Who We Are, Board 2026, Supporters, Community Spotlight)",
+      "Donate (external button: https://www.zeffy.com/en-US/ticketing/buy-a-buddy-bag-2)"
+    ],
+    "footer": [
+      "Logo linking to /",
+      "Address: 550 E Burrell Dr, Crown Point, IN 46307, loading-dock red door on the east side",
+      "Phone: (219) 805-3717 (tel: link)",
+      "Email: communityhelpnetwork2020@gmail.com (fix to a single correct mailto: link)",
+      "Links: Home, Events, Buddy Bags, Household Pantry, Ladle of Love, Century Club (/donations/, replacing the 404 /century-club/), Who We Are, Board 2026, Supporters, How to Help, Community Spotlight",
+      "Buttons: Donate (external Zeffy), Volunteer (/how-to-help/)",
+      "Social: Facebook https://www.facebook.com/profile.php?id=100064492307463, Instagram https://www.instagram.com/commhelpnetinc/",
+      "Remove the Sponsor (#) link and the broken Google icon link"
+    ]
+  },
+  "page_spec": {
+    "home_sections": [
+      "Hero: 'Community Help Network', the 'Home of Buddy Bags' identity line, and the mission (programming to help alleviate food insecurity and poverty in South Lake County, Indiana). Use the warehouse packing-line GBP photo. Primary CTA Donate (external Zeffy); secondary CTA Volunteer (/how-to-help/).",
+      "Program cards (daisyUI card): Buddy Bags, Household Pantry, and Ladle of Love, each with key hours or rules and a link to its page.",
+      "Impact strip with homepage counts as written: over 850 students in four southern Lake County school districts, and Household Pantry over 110 families a month. Add no other figures.",
+      "Year-end match block with homepage copy as written: $24,000 match, $25/$50, $50/$100, and $100/$200 examples, turning $24,000 into $48,000. Link to external Zeffy.",
+      "Suggested food donations list (DonationChecklist island) plus Aldi or Strack's gift-card note.",
+      "Drop-off and visit info: red door by the east-side loading dock, ARC building warehouse across from Crown Point High School, May–July drop-off hours, and after-hours drop box. Pantry visitors: Tuesday and Saturday 9:00 a.m.–12:00 p.m. with photo ID and proof of residency.",
+      "Volunteer shifts summary: pantry Tuesday and Saturday 9:00 a.m.–12:00 p.m.; Buddy Bag packing Monday 10:00 a.m.–noon during the school year; Ladle of Love first and third Saturdays 10:00 a.m.–1:00 p.m. Link to /how-to-help/.",
+      "Google rating badge: 4.7 from 12 reviews, aggregate only, no quotes.",
+      "Footer per site_map.footer."
+    ],
+    "must_include": [
+      "Mission on the homepage: programming to help alleviate food insecurity and poverty in South Lake County, Indiana",
+      "Address 550 East Burrell Dr., Crown Point, IN 46307, in the ARC building warehouse across from Crown Point High School; loading-dock entrance is the red door on the east side",
+      "Phone (219) 805-3717",
+      "Header wordmark reads 'Community Help Network' (no 'Inc.')",
+      "Buddy Bags, Household Pantry, and Ladle of Love as the named programs, with their stated hours and the pantry ID and residency rule",
+      "Buddy Bags school corporations: Geminus Head Start in Crown Point; Crown Point Community School Corporation; Lake Central School Corporation; Hanover Community School Corporation; Tri-Creek School Corporation",
+      "Buddy Bags schools as listed on that page: Eisenhower, Lake Street, MacArthur, Solon Robinson, Timothy Ball; Bibich, Homan, Kolling, Piefer, Prostman, Watson; Hanover Learning Academy, Jane Ball, Red Cedars, Lincoln; Oak Hill, Lake Prairie, Three Creeks",
+      "Wheeler Middle School, Hanover Central Middle School, and Lowell Middle School receive a $25 gift card instead of a bag",
+      "Volunteer shifts as stated on How to Help",
+      "Homepage suggested food donations list in full, plus the Aldi or Strack's gift-card request",
+      "Household Pantry item list in full",
+      "Board 2026 names and roles exactly as listed, and founder Bonnie J Meyer",
+      "History dates as stated on Who We Are",
+      "Homepage counts and year-end match copy as written on their source pages",
+      "Summer Buddy Bags pickup locations: 550 East Burrell Drive or Lowell First United Methodist Church, 520 East Commercial Avenue"
+    ],
+    "avoid": [
+      "Invented reviews, testimonial quotes, awards, EIN, 501(c) status, licenses, or founding years beyond the stated dates",
+      "The WordPress preset palette (#abb8c3, #f78da7, #cf2e2e, #ff6900, #fcb900, #7bdcb5, #00d084, #8ed1fc, #0693e3, #9b51e0) and the unconfirmed Elementor tokens",
+      "Buy a Buddy Bag prices or stock",
+      "Any working donation checkout, cart, login, Point account signup, newsletter form, email sender, or callback form",
+      "Presenting Century Club tiers or pantry items as products for sale, or using shop/product UI",
+      "Linking to /century-club/ (404) or Sponsor (#)",
+      "Reconciling conflicting counts, school lists, match amounts, or executive director into a single figure",
+      "Naming an executive director anywhere except /board/ until confirmed",
+      "Restyling daisyUI components beyond theme tokens"
+    ],
+    "photo_plan": "Use only downloaded GBP photos as described, and keep real scenes. Hero: warehouse packing line with volunteers filling paper bags from black bins of packaged snacks (Buddy Bags). How to Help: volunteers at tables under orange racking of canned and boxed food. Ladle of Love: four aproned volunteers with name badges at a serving table with a chalkboard menu, and the dining-hall luncheon with people seated and volunteers serving from a cart. Donations section: pile of donated groceries (cereal, crackers, juice boxes, snack cakes). Household Pantry: volunteer sorting napkins and bags beside Ziploc boxes. Do not use the failed portrait photo, the unviewed street-view thumbnail, or unopened homepage images until reviewed. Use no stock photos. Alt text describes what is actually shown.",
+    "cta": "Primary: Donate, linking externally to the existing Zeffy Buy a Buddy Bag page (no local checkout). Secondary: Volunteer, linking to /how-to-help/, with Point signup mentioned as an external step. Supporting CTAs: food-donation drop-off at the red loading-dock door; pantry visit on Tuesday or Saturday 9:00 a.m.–12:00 p.m. with photo ID and proof of residency; Century Club linking to /donations/; Ladle of Love linking to /ladle-of-love/.",
+    "island_framework": "vue3"
+  },
+  "interactive_islands": [
+    {
+      "name": "DonationChecklist",
+      "purpose": "Client-side checklist of the homepage suggested food donations and the Household Pantry item list. Visitors tick items to build a personal shopping list on screen and can print it. Nothing is sent, stored server-side, or emailed. Used on / and /how-to-help/.",
+      "kit_component": "daisyUI checkbox + tabs (Food donations / Pantry items) + btn (print)"
+    },
+    {
+      "name": "SchoolFinder",
+      "purpose": "Filters the Buddy Bags school list (exactly as listed on /buddy-bags1/) by school corporation or text search, and shows the $25 gift card note for Wheeler, Hanover Central, and Lowell middle schools. Static data only, with no student information.",
+      "kit_component": "daisyUI input + select + list/badge"
+    }
+  ],
+  "existing_site": {
+    "discovered": true,
+    "notes": "This is an upgrade proposal for the HTTPS 200 WordPress site (Hello Elementor) at canonical www.communityhelpnet.org, with og:site_name 'Community Help Network - Crown Point', checked 2026-11-16. Preserve the observed IA and slugs: /, /programs/, /events/, /buddy-bags1/, /household-pantry/, /donations/ (Century Club), /who-we-are/, /board/, /supporters/, /how-to-help/, /communityspotlight/, plus /ladle-of-love/, which is live but missing from the menu. Fix these issues: the footer /century-club/ 404 points to /donations/; the Sponsor (#) link is removed; the broken Google icon link (http://mailto.communityhelpnetwork2020@gmail.com) and the doubled mailto on the email are corrected; and the Programs page copy is cleaned up using only verified facts. Donations stay on external Zeffy, volunteer signup stays on external Point (/volunteer-signup/ is live), and the Constant Contact newsletter is an external link only. Observed header: #2b2b2b background, #f90404 Roboto 600 title, white nav, #ff0303 Donate button. Observed footer: #4e4e4e to #343434 gradient with #02d3c9 top border. No sample products are included because this is a nonprofit; Century Club tiers are informational only."
+  }
+}
